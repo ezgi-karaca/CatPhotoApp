@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CatPhotoApp</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <h1>Cat Photo App</h1>
+
+      <section>
+      <h2>Cat Photos</h2>
+      <p>A purr-fect collection of <a href="https://www.shutterstock.com/tr/search/cat" target="_blank">adorable cats</a>!</p>
+      <a href="https://freecatphotoapp.com"><img src="images/cat1.webp" alt="cat image"></a>
+      <img src="images/cat2.jpg" alt="cat image">
+      <img src="images/cat3.jpg" alt="cat image">
+      <p>See more <a href="https://www.shutterstock.com/tr/search/cat">cat photos</a>.</p>
+    </section>
+
+    <section>
+      <h2>Cat Lists</h2>
+      <h3>Things cats love:</h3>
+      <ul>
+        <li>Catnip</li>
+        <li>Laser pointers</li>
+        <li>Olive</li>
+      </ul>
+      <figure> 
+        <img src="images/olive.webp" alt="A cat loves olives"> 
+        <figcaption>Cats <em>love</em> olives.</figcaption>
+      </figure>
+      <h3>Top 3 things cats hate:</h3>
+        <ol>
+          <li>Flea treatment</li>
+          <li>Thunder</li>
+          <li>Vacuum Cleaner</li>
+        </ol>
+        <figure>
+          <img src="images/vacuum.webp" alt="Five cats looking around a field.">
+          <figcaption>Cats <strong>hate</strong> vacuum cleaners.</figcaption>
+        </figure>
+    </section>
+
+    <section>
+      <h2>Cat Form</h2>
+      <form action="https://freecatphotoapp.com/submit-cat-photo">
+        <fieldset>
+          <legend>Is your cat an indoor or outdoor cat?</legend>
+          <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+          <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>What's your cat's personality?</legend>
+          <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+          <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+          <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic"> Energetic</label>
+        </fieldset>
+
+
+        <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    </main>
+
+    <footer>
+      <p>Ezgi Karaca <a href="https://github.com/ezgi-karaca" target="_blank">Github</a></p>
+    </footer>
+  </body>
+</html>
